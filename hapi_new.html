@@ -1,0 +1,104 @@
+<html>
+<head>
+  <link rel="stylesheet" href="http://hapi-server.org/assets/css/style.css?v=4bb64febca814d7976fa5caf433a0b68e27a0f66">
+  <style type="text/css" media="screen">
+  .row {
+  display: flex;
+  }
+  .column {
+  flex: 50%;
+  }
+  </style>
+  
+</head>
+<body>
+<div class="container-lg px-3 my-5 markdown-body">
+
+<img src='hapilogo.png' alt='logo' width='10%' height='auto'>
+Specification
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Get Data
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Demo
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+GitHub
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+For Data Centers
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+For Developers
+
+
+<table>
+<!--  <tr><td colspan=2><p>&nbsp;</p></td></tr>-->
+
+  <tr>
+<td colspan=2>
+    <h2>About HAPI</h2>
+<p>
+The Heliophysics Data Application Programmer’s Interface (HAPI) specification is a time series download and streaming format specification. A 1-page summary is given in <a href="">HAPI_OnePager.pdf</a>. A more detailed overview is given in the <a href="">JGR article Weigel et al., 2021</a> and the video presentation by <a href="">Vandegriff et al.</a> and accompanying <a href="">pdf</a>.
+</p><p>
+The HAPI specification was recommended by <a href="">COSPAR</a> in 2018 as the common data access API for space science and space weather data.
+</p><p>
+When data are available from a HAPI server, there is no need to download data files and write custom file reader programs. Using a HAPI client library, data can be loaded into an array using a single command using HAPI <a href="">IDL</a>, <a href="">MATLAB</a>, and <a href="">Python clients</a>. Data from HAPI servers is also accessible to users of <a href="">Autoplot</a>, <a href="">PySPEDAS</a>, and <a href="">IDL SPEDAS</a>. Sample scripts and containing instructions for accessing data using the above–listed clients may be found by selecting a server, dataset, and time range at the web interface <a href="">http://hapi-server.org/servers/</a>.
+</p><p>
+A list of HAPI-compliant data servers is available at <a href="">http://hapi-server.org/servers/</a>.
+</p><p>
+The <a href="">hapi-server GitHub project</a> contains a collection of repositories for HAPI–related software and documentation, including client and server libraries and code for verifying and testing a HAPI server.
+</p>
+</td>
+
+  </tr>
+<!--  <tr><td colspan=2><p>&nbsp;<br />&nbsp;</p></td></tr>-->
+  <tr>
+    <td valign=top>
+<center>      <h3>For Scientists</h3></center>
+<ul>
+<li> Get Data:
+Use the interface at <a href="">http://hapi-server.org/servers/</a> to download data from your browser, generate ~10-line wget/curl/IDL/MATLAB/Python scripts to download data, or create preview plots.
+<li>Demo: A demonstration of using 5 different clients to access data from a HAPI server is shown in <a href="">a YouTube video</a>.
+<li>Client Software: Data from any HAPI-compliant server can be easily accessed using IDL, Java, MATLAB, Python, and other languages. The repositories for HAPI libraries in these languages is available <a href="">at GitHub</a>.
+<li>List of Servers: A list of HAPI-compliant data servers is available at <a href="">http://hapi-server.org/servers/</a>.
+</ul>
+
+    </td>
+
+    <td valign=top>
+<center>      <h3>For Developers</h3></center>
+<ul>
+<li>Github: All software related to the HAPI specification is available from its <a href="">GitHub project page</a>. Software includes clients, servers, and a server verifier/validator.
+<li>Email lists:
+<ul>
+<li><a href="">Announcements</a> about HAPI-related software
+<li><a href="">Discussion</a> of the specification and telecon announcements
+<li><a href="">Help</a> on HAPI-related issues
+</ul>
+</ul>
+    </td>
+  </tr>
+
+<tr>
+    <td colspan=2 valign=top>
+<center>     <h3>For Data Centers</h3></center>
+<ul>
+<li>API and Spec: The HAPI specification describes a minimum set of capabilities needed for a server to allow access to the time series data values within one or more data collections.
+<ul>
+<li>Current version (3.0.0): <a href="">PDF</a> | <a href="">HTML</a>
+<li><a href="">Draft 3.1 version</a>
+</ul>
+<li>Server s/w: 
+<ul>
+<li>Prior to writing server-side software, we suggest trying the <a href="">generic stand-alone HAPI server</a>. If you can generate <a href="">HAPI ASCII</a> of your datasets with a command line program, you can use this server to quickly get a HAPI-compliant server running on your site.
+
+<li>User-contributed source code for servers in various languages is available at <a href="">GitHub</a>. This contributed code is typically not up-to-date or generalized but it may be useful for getting started.
+
+<li>See the server-ui repository for a basic server entry/overview page template for a HAPI server. Code is also available for a web interface for generating URLs to download data, plotting data from a HAPI server, and generating scripts that read and plot the selected parameter (the code used by <a href="">http://hapi-server.org/servers/</a>).
+
+<li>Server developers can test their server for HAPI-compliance using the<a href=""> HAPI server verification service</a>.
+</ul>
+</ul>
+    </td>
+</tr>
+
+</table>
+
+  
