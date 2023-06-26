@@ -23,15 +23,21 @@
   /* from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
   /* The navigation bar */
 .navbar {
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
   background-color: #c60; /* #777; */
   position: fixed; /* Set the navbar to fixed position */
   border-radius: 1em;
   top: 0; /* Position the navbar at the top of the page */
   width: 99%; /* Full width */
 }
+
 /* Links inside the navbar */
 .navbar a {
+  display: inline-flex;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -60,7 +66,15 @@
 }
 
 
-
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display:none;}
+    .navbar a.icon {
+       float: right;
+       display: block;
+    }
+    .leftContent {float: left;}
+    .rightContent {overflow: hidden;}
+}
 
   </style>
   
