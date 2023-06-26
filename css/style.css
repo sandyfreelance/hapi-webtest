@@ -1,0 +1,28 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header {
+  display: none;
+}
+
+// Hide the hapi-server.github.io link as this page is used at hapi-server.org/
+h1:first-of-type {
+  display: none;
+}
+
+body {
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(55,55,108,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+a {
+    color: rgb(41, 93, 143);
+}
+
+.container-lg {
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: white;
+    padding: 1em;
+}
